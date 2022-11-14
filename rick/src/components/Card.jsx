@@ -18,7 +18,7 @@ const Card = ({ character }) => {
         <div className='col-12 col-lg-6'>
             <div className='card text-bg-secondary mb-4'>
                 <div className='row'>
-                    <div className='col-5'>
+                    <div className='col-12 col-sm-4'>
                         <img
                             src={character.image}
                             className="img-fluid rounded-start"
@@ -26,8 +26,8 @@ const Card = ({ character }) => {
                             alt={character.name}>
                         </img>
                     </div>
-                    <div className='col-7'>
-                        <div className="card-body">
+                    <div className='col-12 col-sm-8'>
+                        <div className="card-body ps-4">
                             <h5 className="card-title">{character.name}</h5>
                             <p className={colorStatus}>{character.status} - {character.species}</p>
                             <span className="card-text">Última ubicación conocida:</span>
