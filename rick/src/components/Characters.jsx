@@ -10,6 +10,8 @@ const Characters = () => {
 
     const [page, changePage] = useState(1);
 
+    const pages = 42;
+
     const url = "https://rickandmortyapi.com/api/character/?page="
 
     useEffect(() => {
@@ -30,7 +32,7 @@ const Characters = () => {
                 })}
 
             </div>
-            <Pagination page={page} changePage={changePage} />
+            <Pagination page={page} changePage={changePage} maxPages={pages} />
         </>
     );
 }

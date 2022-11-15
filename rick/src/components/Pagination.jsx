@@ -22,7 +22,7 @@ const Pagination = (props) => {
     }
 
     const LastPage = () => {
-        if (props.page !== 42) {
+        if (props.page !== props.maxPages) {
             return (
                 <>
                     <li className="page-item"><button className="page-link" onClick={onClickSiguiente} >{props.page + 1}</button></li>
@@ -47,7 +47,7 @@ const Pagination = (props) => {
     }
 
     const onClickLast = () => {
-        props.changePage(42);
+        props.changePage(props.maxPages);
     }
 
 
